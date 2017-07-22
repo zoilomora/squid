@@ -23,7 +23,7 @@ This installer works on the following operating systems:
 
 2) Run the Install Script:
 ```sh
-sudo /bin/sh install.sh
+sudo /bin/bash install.sh
 ```
 
 ### Create new users
