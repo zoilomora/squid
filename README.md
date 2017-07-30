@@ -7,6 +7,7 @@ completely anonymous navigation.
 This installer is based on the following tutorials:
 - [Squid Proxy Server On VPS](http://nikhgupta.com/code/installing-squid-proxy-server-on-centos-5-vps/)
 - [Anonymous Proxy With Squid](http://nikhgupta.com/code/setting-up-anonymous-proxy-with-squid/)
+- [How to Disable IPv6 in Ubuntu 16.04 Xenial Xerus](http://www.neuraldump.com/2016/11/how-to-disable-ipv6-in-ubuntu-16-04-xenial-xerus/)
 
 ## Implementation
 ### Supported Operating Systems
