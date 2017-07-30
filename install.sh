@@ -55,6 +55,16 @@ apt-get -f install -y
 # Install Packages
 apt-get install apache2-utils squid -y
 
+# Disable IPv6
+ipv6=$(cat /proc/sys/net/ipv6/conf/all/disable_ipv6)
+if [ "$ipv6" != "1" ]
+then
+    echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
+    echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
+    echo "net.ipv6.conf.lo.disable_ipv6 = 1" >> /etc/sysctl.conf
+    sysctl -p
+fi
+
 # Go to the Squid main folder
 cd /etc/squid/
 
